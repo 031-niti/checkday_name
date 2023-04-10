@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Day Name</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-title">Day Name</h1>
+    <form>
+      <div class="col-lg-4">
+        <label for="staticEmail" class="col col-form-label">Enter a date</label>
+        <input type="text" name="dateInput" class="form-control" id="dateInput" placeholder="YYYY-MM-DD">
+        <button type="button" class="btn btn-primary" onclick="getDayName()">Submit</button>
+      </div>
+    </form>
+    <div id="result" class="day-name"></div>
+  </div>
+  <script src="checkdate.js"></script>
+</body>
+
+</html>
